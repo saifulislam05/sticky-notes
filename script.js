@@ -1,10 +1,4 @@
-const NOTES = [
-    {
-        description:
-            "I'm learing in Geekster Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum necessitatibus eius",
-        bg: "green",
-    },
-];
+const NOTES = [];
 
 // Input Area Element
 const addBtn = document.getElementById("addBtn");
