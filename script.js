@@ -35,11 +35,15 @@ function updateNotesUi() {
   notesWrapper.innerHTML = noteItems;
 }
 updateNotesUi();
+// add note function
 function addNote() {
   let textAreaInput = document.getElementById("text_area_input");
   const colorInput = document.getElementById("color_input");
   const currentTime = new Date();
 
+  if (textAreaInput.value.length == 0) {
+    return;
+  }
   // Format the current time
   const formattedTime = currentTime.toLocaleTimeString(undefined, {
     hour: "2-digit",
