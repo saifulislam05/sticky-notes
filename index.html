@@ -14,8 +14,7 @@
     />
     <!-- output style -->
     <link href="/styles/output.css" rel="stylesheet" />
-    <!-- javascript file  -->
-    <script src="/script.js" defer></script>
+    
   </head>
   <body>
     <header>
@@ -59,6 +58,7 @@
             <input id="color_input" name="color" type="color" value="#14A44D" />
           </div>
           <button id="addBtn" class="btn btn-success">Add</button>
+          <button id="editBtn" class="btn btn-success" style="display: none;">Edit</button>
         </div>
       </div>
       <div class="output_area w-2/3 rounded-2xl">
@@ -67,13 +67,13 @@
         </div>
         <div id="notes_wrapper" class="mt-4 grid grid-cols-4 gap-3">
           <!-- note item will come dynamically -->
-          <div
+          <!-- <div
             id="${index}"
             class="note text-white rounded-xl p-4 relative"
             style="background-color: green"
           >
             <div class="actionBtns w-full flex justify-end gap-3">
-              <i id="${index}" class="editBtn fa-regular fa-pen-to-square"></i>
+              <i id="sendToEditBtn" class="sendToEditBtn fa-regular fa-pen-to-square"></i>
               <i
                 id="${index}"
                 class="deleteBtn cursor-pointer text-red-600 fa-solid fa-trash-can"
@@ -83,9 +83,11 @@
             <span id="time" class="time absolute bottom-2 right-2 text-[.6rem]">
               ${time}</span
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
+    <!-- javascript file  -->
+    <script src="/script.js" defer></script>
   </body>
 </html>
