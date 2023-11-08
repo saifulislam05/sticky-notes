@@ -20,7 +20,7 @@ function updateNotesUi() {
     noteItems += `<div
             id="${index}"
             class="note text-white rounded-xl p-4 relative"
-            style="background-color: green"
+            style="background-color: ${note.bg}"
           >
             <div class="actionBtns w-full flex justify-end gap-3">
               <i id="${index}" class="editBtn fa-regular fa-pen-to-square"></i>
